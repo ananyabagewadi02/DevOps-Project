@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DevOps Monitoring Dashboard</title>
+
+    <style>
+
+        body{
+            background:#0f172a;
+            color:white;
+            font-family:Arial;
+            margin:0;
+            padding:0;
+        }
+
+        h1{
+            text-align:center;
+            padding:20px;
+            color:#38bdf8;
+        }
+
+        .container{
+            display:grid;
+            grid-template-columns:repeat(2,1fr);
+            gap:20px;
+            padding:20px;
+        }
+
+        .card{
+            background:#1e293b;
+            padding:20px;
+            border-radius:15px;
+            box-shadow:0px 0px 10px rgba(0,0,0,0.5);
+        }
+
+        .title{
+            font-size:22px;
+            margin-bottom:20px;
+        }
+
+        .bar{
+            height:25px;
+            border-radius:10px;
+            margin-bottom:15px;
+            background:linear-gradient(to right,#22c55e,#38bdf8);
+        }
+
+        .cpu{
+            width:75%;
+        }
+
+        .memory{
+            width:60%;
+        }
+
+        .network{
+            width:85%;
+        }
+
+        .storage{
+            width:50%;
+        }
+
+        .status{
+            color:#22c55e;
+            font-size:20px;
+            margin-top:20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>DevOps CI/CD Monitoring Dashboard</h1>
+
+    <div class="container">
+
+        <div class="card">
+            <div class="title">CPU Usage</div>
+            <div class="bar cpu"></div>
+            75%
+        </div>
+
+        <div class="card">
+            <div class="title">Memory Usage</div>
+            <div class="bar memory"></div>
+            60%
+        </div>
+
+        <div class="card">
+            <div class="title">Network Traffic</div>
+            <div class="bar network"></div>
+            85%
+        </div>
+
+        <div class="card">
+            <div class="title">Storage Usage</div>
+            <div class="bar storage"></div>
+            50%
+        </div>
+
+    </div>
+
+    <center>
+        <div class="status">
+            ✅ Application Successfully Running in Docker Container
+        </div>
+    </center>
+
+
+
+    <div class="card">
+    <div class="title">Kubernetes Pods</div>
+    Running Pods: 4/4
+</div>
+
+<div class="card">
+    <div class="title">Prometheus Metrics</div>
+    Requests/sec: 124
+</div>
+
+<div class="card">
+    <div class="title">Cloud Status</div>
+    AWS EC2: Active
+</div>
+
+</body>
+
+</html>
